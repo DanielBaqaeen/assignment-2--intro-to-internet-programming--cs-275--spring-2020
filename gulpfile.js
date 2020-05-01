@@ -40,18 +40,28 @@ let serve = () => {
 
     browserSync({
         notify: true,
-        reloadDelay: 1500,
+        reloadDelay: 0,
         server: {
             baseDir: [
                 `html`,
-                `temp`
+                `temp`,
+                `./`
             ]
         }
     });
 
-    watch([`html/*.html`, `css/*.css`, `js/*.js`],
-        series(validateHTML, lintCSS, lintJS, transpileJSForDev)
+    watch(`js/*.js`,
+        series(lintJS, transpileJSForDev)
     ).on(`change`, reload);
+
+    watch(`css/*.css`,
+        series(lintCSS)
+    ).on(`change`, reload);
+
+    watch(`html/*.html`,
+        series(validateHTML)
+    ).on(`change`, reload);
+
 };
 
 let compressHTML = () => {
