@@ -7,6 +7,7 @@ const browserSync = require(`browser-sync`);
 const reload = browserSync.reload;
 const htmlCompressor = require(`gulp-htmlmin`);
 const jsCompressor = require(`gulp-uglify`);
+const cleanCSS = require(`gulp-clean-css`);
 
 let validateHTML = () => {
     return src(`html/*.html`)
@@ -20,8 +21,7 @@ let lintCSS = () => {
             reporters: [
                 {formatter: `verbose`, console: true}
             ]
-        }))
-        .pipe(dest(`temp/css`));
+        }));
 };
 
 let lintJS = () => {
@@ -30,15 +30,11 @@ let lintJS = () => {
         .pipe(jsLinter.formatEach(`compact`, process.stderr));
 };
 
-//linter and transpiler for js can be combined together later
-
 let transpileJSForDev = () => {
     return src(`js/*.js`)
         .pipe(babel())
         .pipe(dest(`temp/js`));
 };
-
-
 
 let serve = () => {
 
@@ -71,12 +67,11 @@ let compressJS = () => {
         .pipe(dest(`prod/js/`));
 };
 
-let copyCSS = () => { //maybe be changed to a compressor
+let compressCSS = () => {
     return src(`css/*.css`)
+        .pipe(cleanCSS({}))
         .pipe(dest(`prod/css/`));
 };
-
-
 
 exports.validateHTML = validateHTML;
 exports.lintCSS = lintCSS;
@@ -86,5 +81,5 @@ exports.serve = serve;
 exports.dev = series(validateHTML, lintCSS, lintJS, transpileJSForDev, serve);
 exports.compressHTML = compressHTML;
 exports.compressJS = compressJS;
-exports.copyCSS = copyCSS;
-exports.build = series(compressHTML, compressJS, copyCSS );
+exports.compressCSS = compressCSS;
+exports.build = series(compressHTML, compressJS, compressCSS );
