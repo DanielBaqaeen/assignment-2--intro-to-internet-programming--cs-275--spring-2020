@@ -1,0 +1,196 @@
+html {
+  background-color: #defcff;
+  color: black;
+}
+
+h1 {
+  background-color: inherit;
+  text-align: center;
+  color: #ff644f;
+  font-size: 40px;
+}
+
+#white-rice-div {
+  display: none;
+}
+
+#california-rice-div {
+  display: none;
+}
+
+button {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+button:nth-child(1) {
+  color: #fff;
+  background-color: black;
+}
+
+button:nth-child(2) {
+  color: #ffc72e;
+  background-color: #61374d;
+}
+
+div:nth-child(1) {
+  font-weight: 700;
+  font-size: 24px;
+  color: #223cff;
+  font-style: italic;
+}
+
+div:nth-child(2) {
+  margin-top: 40px;
+}
+
+div:nth-child(2) > p:nth-child(1) {
+  font-weight: 700;
+  text-align: center;
+  color: #592a61;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+div:nth-child(2) > p {
+  margin: 10px;
+  font-size: 23px;
+}
+
+div:nth-child(2) > p:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+div:nth-child(2) > p:nth-child(3) {
+  margin-bottom: 25px;
+}
+
+div:nth-child(2) > p:nth-child(4) {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+div:nth-child(2) > p:nth-child(6) {
+  margin-bottom: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div:nth-child(2) > p:nth-child(5) {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div:nth-child(2) > p:nth-child(7) {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+div:nth-child(2) > p:nth-child(8) {
+  font-family: 'Roboto Mono', monospace;
+}
+
+div:nth-child(3) {
+  margin-top: 40px;
+}
+
+div:nth-child(3) > p:nth-child(1) {
+  font-weight: 700;
+  text-align: center;
+  color: #bf8b3d;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+div:nth-child(3) > p {
+  margin: 10px;
+  font-size: 23px;
+}
+
+div:nth-child(3) > p:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+div:nth-child(3) > p:nth-child(3) {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #d490ca;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+div:nth-child(3) > p:nth-child(4) {
+  margin-bottom: 25px;
+}
+
+div:nth-child(3) > p:nth-child(5) {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+div:nth-child(3) > p:nth-child(6) {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div:nth-child(3) > p:nth-child(7) {
+  margin-bottom: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div:nth-child(3) > p:nth-child(8) {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+div:nth-child(3) > p:nth-child(9) {
+  margin-bottom: 45px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+div:nth-child(3) > p:nth-child(10) {
+  margin-bottom: 25px;
+  color: #945c7a;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+div:nth-child(3) > p:nth-child(11) {
+  margin-bottom: 25px;
+}
+
+div:nth-child(3) > p:nth-child(12) {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+div:nth-child(3) > p:nth-child(13) {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div:nth-child(3) > p:nth-child(14) {
+  margin-bottom: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div:nth-child(3) > p:nth-child(15) {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+div:nth-child(3) > p:nth-child(16) {
+  font-family: 'Roboto Mono', monospace;
+}
+
+input {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+output {
+  font-size: 24px;
+  font-weight: 700;
+  color: #bf3d2b;
+}
