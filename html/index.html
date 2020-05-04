@@ -7,8 +7,33 @@
   </head>
   <body>
     <header>
-      <h1></h1>
+      <h1>How to Make the Perfect Rice</h1>
     </header>
+    <main>
+      <div>Pick the desired type of rice: <button id="white-rice-button">White Rice</button> or <button id="california-rice-button">Sprouted California Rice</button></div>
+      <div id="white-rice-div">
+        <p>Making White Rice</p>
+        <p>The ratio (everything in ounces) of rice to water to olive oil is 1: 2: 0.0625 </p>
+        <p>Enter how many ounces of rice you want to make: <input id= "white-rice-input" type="number" placeholder="Ounces of Rice" name="white-rice-amount" value=""></p>
+        <p>You will need <output id = "water-amount-output-white"></output> ounces of water or broth </p>
+        <p>You will need <output id = "oil-amount-output"></output> ounces of olive oil</p>
+        <p>Combine the <output id = "white-rice-amount-output"></output> ounces of rice with <output id = "water-amount-output2-white"></output> ounces of water and <output id = "oil-amount-output2"></output> ounces of olive oil. Bring to a boil, then reduce heat to the lowest setting. Cook for about 18 minutes.</p>
+      </div>
+      <div id="california-rice-div">
+        <p>Making Sprouted California Rice</p>
+        <p>Enter how many ounces of rice you want to make <input id= "california-rice-input" type="number" placeholder="Ounces of Rice" name="california-rice-amount" value="">
+        <p>To make the rice slightly al dente:</p>
+        <p>The ratio (everything in ounces) of rice to water or broth to olive oil is 1: 1.6: 0.05</p>
+        <p>You will need <output id = "aldente-liquid-amount"></output> ounces of water or broth </p>
+        <p>You will need <output id = "aldente-oil-amount"></output> ounces of olive oil</p>
+        <p>Combine the <output id = "aldente-rice-amount-output"></output> ounces of rice with <output id = "aldente-liquid-amount2"></output> ounces of water or broth and <output id = "aldente-oil-amount2"></output> ounces of olive oil. Bring to a boil and stir once to mix. Reduce heat to low, cover with a tight-fitting lid and cook for 25 minutes. Remove from heat and let stand for 5 minutes. Fluff with a fork and serve.</p>
+        <p>For softer rice:</p>
+        <p>The ratio (everything in ounces) of rice to water or broth to olive oil is 1: 2: 0.05</p>
+        <p>You will need <output id = "soft-liquid-amount"></output> ounces of water or broth </p>
+        <p>You will need <output id = "soft-oil-amount"></output> ounces of olive oil</p>
+        <p>Combine the <output id = "soft-rice-amount-output"></output> ounces of rice with <output id = "soft-liquid-amount2"></output> ounces of water or broth and <output id = "soft-oil-amount2"></output> ounces of olive oil. Bring to a boil and stir once to mix. Reduce heat to low, cover with a tight-fitting lid and cook for 30 minutes. Remove from heat and let stand for 5 minutes. Fluff with a fork and serve.</p>
+      </div>
+    </main>
     <script src="js/app.js"></script>
   </body>
 </html>
